@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwatera główna</title>
+    <link rel="stylesheet" href="../css/style.min.css">
+
+</head>
+<body onload="dateTime();">
+
+    <div class="first-look">
+            <div class="container-header">
+                <div class="logo">
+                    <img src="gallery/logo.png" alt="logotyp">
+                    <p class="pradawny">pradawny</p>
+
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="#"> Github</a></li>
+                        <li><a href="#"> Facebook</a></li>
+                        <li><a href="#"> Youtube</a></li>
+                        <li><a href="#"> Discord</a></li>
+                        <li><a href="#"> Codewars</a></li>
+             
+                    </ul>
+                </div>
+            </div>
+        
+        <!-- main content -->
+            <div class="center-section">
+                <div class="animate-border">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- weather info -->
+                <div id="weather-box">
+                    <div id="watch">
+                    </div>    
+                    <h2>Pogoda na dziś</h2>
+                    <!-- Nazwa miasta -->
+                    <div id="city-name">
+                        <h1>---</h1>
+                    </div>
+                    <!-- pogoda dzień -->
+                     <p id="weather-temp"></p>
+                        <!-- pogoda noc -->
+                    <p id="weather-day-content"></p>
+                </div>
+            </div>
+            <!-- end of weather info -->
+             </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/time.js"></script>
+</body>
+</html>
