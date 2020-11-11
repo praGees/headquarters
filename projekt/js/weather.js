@@ -51,18 +51,3 @@ city.textContent = `Miasto: ${weather.city}`;
 weather2.textContent = `Pogoda: ${weather.info}`;
 temp.textContent = `Temperatura: ${weather.temp.value}℃`;
     }
-    let flag = false;
-const btnFahrenheit = document.querySelector('#btnFahrenheit');
-btnFahrenheit.addEventListener('click', () => {
-    if (!flag) {
-        const celsiusTemp = weather.temp.value;
-        const fahrenHeit = (celsiusTemp * 1.8) + 32;
-        temp.innerHTML = `Temperatura: ${fahrenHeit} \xB0F`;
-        flag = true;
-        btnFahrenheit.textContent = "Zmień z °F na °C"
-    } else {
-        flag = false;
-        temp.innerHTML = `Temperatura: ${weather.temp.value}°C`
-        btnFahrenheit.textContent = "Zmień z °C na °F"
-    }
-})

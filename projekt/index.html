@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwatera główna</title>
     <link rel="stylesheet" href="../css/style.min.css">
+    
 
 </head>
 <body onload="dateTime();">
@@ -42,7 +43,7 @@
                     <h2>Pogoda na dziś</h2>
                     <!-- Nazwa miasta -->
                     <div id="city-name">
-                        <h1>---</h1>
+                        <2>---</h2>
                     </div>
                     <!-- pogoda dzień -->
                      <p id="weather-temp"></p>
@@ -51,9 +52,23 @@
                 </div>
             </div>
             <!-- end of weather info -->
-             </div>
 
-        <script src="js/script.js"></script>
+            <!-- todo list -->
+
+            <div class="todo-list-box">
+
+             <h1><span class="title">Todo</span>List</h1>
+            <div class="inputDiv">
+                <input type="text" class="input" placeholder="Co na dzisiaj?">
+                <button class="add"><img src="gallery/plus.svg" alt=""></button>
+            </div>
+
+            <div class="container">
+            </div>
+        </div>
+
+        <script src="js/weather.js"></script>
         <script src="js/time.js"></script>
+        <script src="js/todolist.js"></script>
 </body>
 </html>

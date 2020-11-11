@@ -94,11 +94,10 @@ body{
 .center-section{
     color: #fff;
     display: flex;
-    justify-content: space-between;
     border: 4px solid #0082fc;
     box-shadow: inset -5px -5px 10px #0082fc, inset 5px 5px 10px #0082fc;
     border-radius: 10px;
-    height: 500px;
+    height: auto;
 
 
 }
@@ -134,7 +133,80 @@ body{
     }
 }
 
+// -----todo list------
+.todo-list-box{
+    margin: 0 auto;
+    text-align: center;
+}
+.inputDiv{
+	display: flex;
+    padding-top: 30px;
 
+
+    .input{
+        height: 50px;
+        border-radius: 25px;
+        width: 350px;
+        margin: 0.25rem;
+        transition: .5s;
+        font-size: 1.15rem;
+    }
+
+    .add{
+        height: 50px;
+        border-radius: 25px;
+        width: 50px;
+        color: white;
+        cursor: pointer;
+    }
+    img{
+        height: 30px;
+    }
+
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: auto;
+}
+
+.edit{
+	background: none;
+	border: none;
+	color: lime;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
 // border animation
 
 .animate-border{
