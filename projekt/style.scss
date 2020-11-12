@@ -31,9 +31,12 @@ body{
     align-items: center;
     font-size: 2.5rem;
     text-transform: uppercase;
+
     img{
         width: 100px;
         height: 100px;
+        // animation: 2.5s linear 1s infinite alternate slidein;
+
     }
     ul{
         display: flex;
@@ -46,6 +49,7 @@ body{
         font-size: 3rem;
         padding: 0;
     }
+
     
 
 }
@@ -114,12 +118,12 @@ body{
     width: 300px;
     height: 400px;
     margin: 40px 0px;
-    div{
-        margin-top: 20px;
-    }
+
     p{
         font-size: 1rem;
         margin-top: 10px;
+        margin-left: 20px;
+        text-align: center;
     }
     #watch{
         font-size: 20px;
@@ -132,6 +136,7 @@ body{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+
     }
 }
 // -----border animation------
@@ -142,6 +147,9 @@ body{
     position: relative;
     overflow: hidden;
     max-height: 500px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
     
     span{
         position: absolute;
@@ -154,7 +162,7 @@ body{
         height: 5px;
         background: linear-gradient(90deg, transparent, #03e9f4);
         animation: animate1 2s linear infinite;
-        animation-delay: 0s;
+        animation-delay: 2s;
     }
     span:nth-child(3){
         bottom:0;
@@ -163,6 +171,7 @@ body{
         height: 5px;
         background: linear-gradient(270deg, transparent, #03e9f4);
         animation: animate3 2s linear infinite;
+        animation-delay: 2s;
     }
     span:nth-child(2){
         right: 0;
@@ -171,7 +180,7 @@ body{
         height: 100%;
         background: linear-gradient(180deg, transparent, #03e9f4);
         animation: animate2 2s linear infinite;
-        animation-delay: 1s;
+        animation-delay: 3s;
     }
     span:nth-child(4){
         left:0;
@@ -180,89 +189,17 @@ body{
         height: 100%;
         background: linear-gradient(0deg, transparent, #03e9f4);
         animation: animate4 2s linear infinite;
-        animation-delay: 1s;
+        animation-delay: 3s;
     }
 }
 
-// -----todo list------
-.todo-list-box{
-    margin: 0 auto;
-    text-align: center;
+.middle-content{
+    width: 400px;
+    height: auto;
+    border-width: 1px;
+    border-left-width: 40px;
+    border-right-width: 40px;
 }
-.inputDiv{
-	display: flex;
-    padding-top: 30px;
-
-
-    .input{
-        height: 50px;
-        border-radius: 25px;
-        width: 350px;
-        margin: 0.25rem;
-        transition: .5s;
-        font-size: 1.15rem;
-    }
-
-    .add{
-        height: 50px;
-        border-radius: 25px;
-        width: 50px;
-        color: white;
-        cursor: pointer;
-    }
-    img{
-        height: 30px;
-    }
-
-}
-.container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin-top: 2rem;
-}
-
-.item{
-	padding: 0.5rem;
-	border-bottom: 4px solid #fff;
-	margin-bottom: 1.5rem;
-}
-
-.item_input{
-	background: none;
-	outline: none;
-	border: none;
-	color: #fff;
-	font-size: 1.4rem;
-	width: auto;
-}
-
-.edit{
-	background: none;
-	border: none;
-	color: lime;
-	font-size: 1.4rem;
-	font-family: 'Hind', sans-serif;
-	margin: 0 0.5rem;
-	cursor: pointer;
-}
-
-.remove{
-	background: none;
-	outline: none;
-	border: none;
-	color: #E00;
-	font-size: 1.4rem;
-	font-family: 'Hind', sans-serif;
-	cursor: pointer;
-}
-
-
-
-
-
 
 
 
@@ -332,4 +269,9 @@ body{
         
     }
 }
+
+@keyframes slidein {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
 
