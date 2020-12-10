@@ -33,14 +33,13 @@
                     </ul>
                 </div>
             </div>
-        
         <!-- main content -->
-            <div class="center-section">
+        <div class="center-section">
                 <div class="animate-border">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 <!-- weather info -->
                 <div id="weather-box">
                     <div id="watch">
@@ -58,11 +57,17 @@
             </div>
             <!-- end of weather info -->
             <div class="middle-content">
-                <h1>Witam</h1>
+                <h5>Wyszukiwarka DuckDuckGo</h5>
+
+                    <div class="search-box" id="txt">
+                        <form method="get" id="search" action="http://duckduckgo.com/" target="_blank">
+                            <input class="search-input" type="text" name="q" maxlength="255" placeholder="Search DuckDuckGo" autofocus/>
+                            <input type="submit" value="DuckDuckGo Search" class="submit-btn" />
+                        </form>
+                    </div>  
             </div>
 
-
-</div>
+    </div>
         <script src="js/weather.js"></script>
         <script src="js/time.js"></script>
 </body>
